@@ -16,8 +16,7 @@
     "social",
     "media",
     "bootstrap",
-    "sass",
-    "test"
+    "sass"
   ],
   "author": "Åke Ek <ake.ek@live.com>",
   "license": "ISC",
