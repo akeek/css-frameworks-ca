@@ -123,8 +123,27 @@
             </div>
         </div>
       </div>
+  <!-- Form for new post -->
+  <div class="container p-3 w-50">
+    <h1 class="py-3 text-center">Create new post</h1>
+    <form>
+        <div class="mb-2">
+          <label for="validationTextarea" class="form-label"></label>
+          <input class="form-control" id="validationTextarea" placeholder="Title" required ></input>
+          <div class="invalid-feedback"></div>
+        </div>
 
-
+        <div class="mb-2">
+          <label for="validationTextarea" class="form-label"></label>
+          <textarea class="form-control" id="validationTextarea" placeholder="Write your post here..." required ></textarea>
+          <div class="invalid-feedback"></div>
+        </div>
+      
+          <div class="mb-2">
+            <button class="btn btn-primary" type="submit" disabled>Post</button>
+          </div>
+      </form>
+</div>
 </main>
 <!-- Footer -->
 <div class="container">
