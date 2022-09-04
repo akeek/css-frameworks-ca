@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/css/styles.css">
+    <title>Log in</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">SoMe</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="profile.html">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="login.html">Login</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+<main>
+    <!-- LOGIN FORM -->
+    <div class="container p-3 col-sm-10 col-lg-3 text-center">
+        <h1 class="text-center">Log in</h1>
+        <div class="form-signin">
+            <form action="/profile.html">
+                <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@company.com" maxlength="50" required>
+                <label for="floatingInput">E-mail</label>
+                </div>
+                <div class="form-floating">
+                <input type="password" class="form-control my-2" id="floatingPassword" placeholder="Password" maxlength="20" pattern="^.(?=.{7,})(?=.[a-zA-Z]).*$" title="Password must be at least 8 characters long" required>
+                <label class="was-validated" for="floatingPassword">Password</label>
+                </div>
+            
+                <div class="checkbox mb-2">
+                <label>
+                    <input type="checkbox" value="remember-me" class="my-2"> Remember me
+                </label>
+                </div>
+                
+                <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+            </form>
+        </div>
+        </div>
+</main>
+<!-- Footer -->
+<div class="container">
+  <footer class="p-3">
+  <ul class="nav justify-content-center border-bottom p-3 m-3">
+      <li class="nav-item"><a href="index.html" class="nav-link text-muted">Home</a></li>
+      <li class="nav-item"><a href="profile.html" class="nav-link text-muted">Profile</a></li>
+      <li class="nav-item"><a href="login.html" class="nav-link text-muted">Login</a></li>
+  </ul>
+  <p class="text-center text-muted">Åke Ek | CSS Frameworks CA | 09-2022</p>
+  </footer>
+</div>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

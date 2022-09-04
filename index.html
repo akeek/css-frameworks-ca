@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/css/styles.css">
+    <title>SoMe Home</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">SoMe</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="profile.html">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <main>
+    <!-- Latest posts -->
+    <div class="container">
+        <h2 class="text-center p-3">Latest posts</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            <div class="col">
+
+              <div class="card h-100">
+                <img src="assets/post-pictures/pexels-asad-photo-maldives-1021068.jpg" class="card-img-top" alt="picture from the Maldives">
+                <div class="card-body">
+                  <h5 class="card-title">SoMe post 1</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer">
+                  <img src="assets/profile-pictures/pexels-chloe.jpg" alt="Bootstrap" width="40" height="40" class="border-grey rounded-circle border">
+                  <small class="text-muted">Bart Seinfeld, </small>
+                  <small class="text-muted">Sept 24 | Vacation</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+
+              <div class="card h-100">
+                <img src="assets/post-pictures/pexels-papa-yaw-3388900.jpg" class="card-img-top" alt="Picture of a man singing">
+                <div class="card-body">
+                  <h5 class="card-title">SoMe post 2</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <div class="card-footer">
+                  <img src="assets/profile-pictures/pexels-masha-raymers.jpg" alt="Bootstrap" width="40" height="40" class="border-grey rounded-circle border">
+                  <small class="text-muted">Peter Simpson, </small>
+                  <small class="text-muted">March 31 | Musical</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+
+              <div class="card h-100">
+                <img src="assets/post-pictures/pexels-ylanite-koppens-796606.jpg" class="card-img-top" alt="Birthday balloons">
+                <div class="card-body">
+                  <h5 class="card-title">SoMe post 3</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+                <div class="card-footer">
+                  <img src="assets/profile-pictures/pexels-tony-jamesandersson.jpg" alt="Bootstrap" width="40" height="40" class="border-grey rounded-circle border">
+                  <small class="text-muted">Marge Griffin, </small>
+                  <small class="text-muted">Sept 27 | Birthday</small>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+    </div>
+
+    <!-- Form for new post -->
+    <div class="container p-3">
+        <h1 class="py-3">Create new post</h1>
+        <form>
+            <div class="mb-2">
+              <label for="validationTextarea" class="form-label"></label>
+              <input class="form-control" id="validationTextarea" placeholder="Title" required ></input>
+              <div class="invalid-feedback"></div>
+            </div>
+
+            <div class="mb-2">
+              <label for="validationTextarea" class="form-label"></label>
+              <textarea class="form-control" id="validationTextarea" placeholder="Write your post here..." required ></textarea>
+              <div class="invalid-feedback"></div>
+            </div>
+          
+              <div class="mb-2">
+                <button class="btn btn-primary" type="submit" disabled>Post</button>
+              </div>
+          </form>
+    </div>
+    </main>
+    <!-- Footer -->
+    <div class="container">
+      <footer class="p-3">
+      <ul class="nav justify-content-center border-bottom p-3 m-3">
+          <li class="nav-item"><a href="index.html" class="nav-link text-muted">Home</a></li>
+          <li class="nav-item"><a href="profile.html" class="nav-link text-muted">Profile</a></li>
+          <li class="nav-item"><a href="login.html" class="nav-link text-muted">Login</a></li>
+      </ul>
+      <p class="text-center text-muted">Åke Ek | CSS Frameworks CA | 09-2022</p>
+      </footer>
+    </div>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
